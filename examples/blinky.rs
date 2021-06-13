@@ -1,8 +1,10 @@
 #![no_main]
 #![no_std]
+#![allow(unused_imports)]
 
 extern crate panic_halt;
 
+use stm32f7;
 use stm32f7xx_hal::{delay::Delay, pac, prelude::*};
 use cortex_m_rt::entry;
 
