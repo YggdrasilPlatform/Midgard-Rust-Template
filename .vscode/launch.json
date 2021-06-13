@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Template",
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": "Build Template",
+            "executable": "./target/thumbv7em-none-eabihf/debug/midgard_rust_template",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "stlink",
+            "svdFile": "./stm32f7/stm32f7x9.svd",
+        },
+        {
+            "name": "Debug Example Blinky",
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": "Build Example Blinky",
+            "executable": "./target/thumbv7em-none-eabihf/debug/examples/blinky",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "stlink",
+            "svdFile": "./stm32f7/stm32f7x9.svd"
+        }
+    ]
+}
